@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6{
     margin-left: 50px; */
 
 .offcanvas-toggle{
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     border-radius: 9px;
     padding: 5px;
     right: 0;
@@ -38,7 +38,8 @@ h1, h2, h3, h4, h5, h6{
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     right: 0;
-    background-color: rgba(0, 0, 0, 0.733); /* Black*/
+    background-color:black;
+    /*background-color: rgba(0, 0, 0, 0.733); */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 80px; /* Place content 60px from the top */
     transition: 0.9s; /* 0.5 second transition effect to slide in the sidenav */
