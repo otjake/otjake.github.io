@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>otJake | Bio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Playfair+Display:,300, 400, 700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+      <div class="site-wrap">
+        <div id="mySidenav" class="sidenav text-center">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="mb-5 animate__animated animate__fadeInUp">
+              <li class="active"><a href="index.html">Bio</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="social">
+              <li><a href="https://www.twitter.com/thechrisdev" class="fa fa-twitter" style="font-size: large;"></a></li>
+              <li><a href="https://www.github.com/chris-miracle" class="fa fa-github" style="font-size: large;"></a></li>
+              <li><a href="https://www.instagram.com/thechris.dev/" class="fa fa-instagram" style="font-size: large;"></a></li>
+              <li><a href="https://www.linkedin.com/thechris.dev/" class="fa fa-linkedin" style="font-size: large;"></a></li> | Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+            </ul>
+        </div>
+        <!-- Use any element to open the sidenav -->
+        <div class="offcanvas-toggle">
+          <span style="font-size:15px;cursor:pointer" id="menu" onclick="openNav()">&#9776; Menu</span>
+        </div>
+        <aside  class="myslideshow" style="background-image: url(image/bio2.png);" style="background-position: center; background-size: contain; background-repeat: no-repeat;"></aside>
+        <main>
+          <h1 class="mb-0">Hi, I'm Jake Obodomechine.</h1>
+          <div class="mb-5">
+            <p class="lead mb-3">Software Engineer &amp; Freelance Model</p>
+            <p>
+                I’m Jake Obodomechine. an artist that utilizes code as my paint and IDE as my canvas &#128516;.
+                I am a Software Engineer based in Lagos, Nigeria. I have proficient experience in writing maintainable and functional code,
+                utilizing best practices to build software solutions.
+                I have an high team playing morale and always excited to build solutions that make a difference.
+                At my leisure time I learn and grow, see animes, as well as stay up to speed on latest development in tech.
+            </p>
+
+          </div>
+          <p>
+            <a href="https://twitter.com/sylvar35" class="fa fa-twitter mr-1" style="font-size: large;"></a>
+            <a href="https://github.com/otjake" class="fa fa-github mr-1" style="font-size: large;"></a>
+            <a href="https://www.linkedin.com/in/jake-obodomechine" class="fa fa-linkedin" style="font-size: large;"></a>
+          </p>
+          <br>
+          <div class="justify-content-between d-flex">
+            <div>
+              <!-- <a href="#" class="fa fa-coffee"><p>Buy me a </p></a> -->
+            </div>
+            <div>
+              <a href="portfolio.html" class="fa fa-arrow-circle-right mr-1" style="font-size: x-large;"></a>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <!-- loader -->
+      <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/jquery.waypoints.min.js"></script>
+      <script src="js/jquery.countdown.min.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/jquery.min.js"></script>
+      <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        }
+      </script>
+      <script>
+          var slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("myslideshow");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+          }
+      </script>
+</body>
+</html>

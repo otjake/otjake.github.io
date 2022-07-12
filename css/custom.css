@@ -1,0 +1,229 @@
+body{
+  background: black;
+}
+h1, h2, h3, h4, h5, h6{
+    color: #fff;
+}
+.offcanvas_menu{
+    background: black;
+    opacity: 0.6;
+}
+/* .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px; */
+
+.offcanvas-toggle{
+    border: 1px solid white;
+    border-radius: 9px;
+    padding: 5px;
+    right: 0;
+    margin: 5px;
+    background: black;
+    font-size: 15px;
+    color: white;
+}
+.offcanvas-toggle:hover{
+    color: #F73859;
+}
+
+
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.733); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 80px; /* Place content 60px from the top */
+    transition: 0.9s; /* 0.5 second transition effect to slide in the sidenav */
+}
+  
+ /* The navigation menu links */
+
+
+/* .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+  /* When you mouse over the navigation links, change their color */
+/* .sidenav a:hover {
+    color: #f1f1f1;
+} */ 
+
+
+
+
+
+
+.sidenav ul {
+    margin: 0;
+    padding: 0;
+}
+  
+.sidenav ul li {
+    margin: 0 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+  
+.sidenav ul li a {
+    color: #fff;
+    padding: 8px 8px 8px 32px;
+    transition: 0.6s;
+    font-size: 25px;
+}
+  
+.sidenav ul li a:hover {
+    opacity: .5;
+}
+  
+.sidenav ul li.active a {
+    color: #F73859;
+}
+  
+.sidenav ul.social li {
+    display: inline-block;
+    margin: 0;
+}
+  
+.sidenav ul.social li a {
+    color: #F73859;
+    font-size: 15px;
+    padding: 5px 0px;
+
+}
+  
+.sidenav ul.social li a:hover {
+    opacity: .5;
+}
+  
+.sidenav ul.social li:first-child a {
+    margin-left: 35px;
+}
+
+
+  /* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    color: #fff;
+    font-size: 36px;
+    margin-left: 10px;
+}
+.sidenav .closebtn :hover {
+    color: red;
+}
+
+@media screen and (max-height: 567px) {
+    .sidenav {
+        padding-top: 15px;
+        height: 50vh;
+    }
+    .sidenav a {font-size: 18px;}
+}
+.mySlides {display: none;}
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* main aside{
+    width: 100%;
+} */
+ 
+@media (min-width: 576px) {
+    main, img {
+      width: 50%;
+    }
+  }
+  
+aside  img{
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+  
+@media (min-width: 576px) {
+    aside img {
+      height: 100vh;
+      position: fixed;
+      right: 0;
+      top: 0;
+    }
+}
+
+
+
+.portfolio-list li{
+    padding: 0;
+    border: 1px solid #000;
+}
+.portfolio-list li:hover {
+    -webkit-box-shadow: 0 4px 10px 0 rgba(255, 255, 255, 0.699);
+    box-shadow: 0 4px 10px 0 rgba(255, 255, 255, 0.699);
+}
+.portfolio-list li a:before {
+    background: #000;
+}
+.resume-list li .date{
+    color: #b3b3b3;
+    opacity: .6;
+}
+.resume-list li h3 {
+    color: #fff;
+}
+#input{
+    background: transparent;
+    color: #fff;
+}
+.container-fluid #image{
+    margin: 0;
+}
+#sideimage{
+    margin: 0;
+}
+#imageme{
+    width: 100%;
+}
+@media (min-width: 1375px){
+  #imageme{
+     height: 100%;
+    }
+}
+#headbio{
+    margin: auto;
+}
+@media (min-width: 300px) {
+    #imageme{
+      margin: 0;
+       /* height: 400px;  */
+      width: 100%;
+    }
+}
+
