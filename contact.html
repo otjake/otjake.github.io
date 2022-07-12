@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>ChrisWeb | Contact</title>
+    <title>otJake | Contact</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -19,24 +19,30 @@
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("Fe1Z8gxhJtIiYm7ku");
+        })();
+    </script>
 </head>
 <body>
         <div class="site-wrap">
                 <div id="mySidenav" class="sidenav text-center">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <ul class="mb-5">
-                                <li><a href="index.html">Bio</a></li>
-                                <li><a href="portfolio.html">Portfolio</a></li>
-                                <li><a href="resume.html">Resume</a></li>
-                                <li class="active"><a href="contact.html">Contact</a></li>
-                        </ul>
-                        <ul class="social">
-                                 <li><a href="https://twitter.com/ChrisVogue" class="fa fa-twitter"></a></li>
-                                 <li><a href="https://www.facebook.com/chris.miracle.167" class="fa fa-facebook"></a></li>
-                                 <li><a href="https://www.instagram.com/chris.vogue_/" class="fa fa-instagram"></a></li> | Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-
-                        </ul>
-                            </div>
+                    <ul class="mb-5 animate__animated animate__fadeInUp">
+                        <li class="active"><a href="index.html">Bio</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="skill.html">Skill</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <ul class="social">
+                        <li><a href="https://twitter.com/sylvar35" class="fa fa-twitter mr-1" style="font-size: large;"></a></li>
+                        <li><a href="https://github.com/otjake" class="fa fa-github mr-1" style="font-size: large;"></a></li>
+                        <li><a href="mailto:jaketuriacada@gmail.com" class="fa fa-envelope mr-1" style="font-size: large;"></a></li>
+                        <li><a href="https://www.linkedin.com/in/jake-obodomechine" class="fa fa-linkedin" style="font-size: large;"></a></li>| Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                    </ul>
+                </div>
                 </div>
                       
                       <!-- Use any element to open the sidenav -->
@@ -48,9 +54,13 @@
                 <aside style="background-image: url(image/contact.png);"></aside>
                 <main>
                         <h1 class="mb-5">Contact Me</h1>
-                         
-                        <form action="#" method="post">
-                            
+                     <h4><a href="#" class="fa fa-phone" style="font-size: 20px;"></a> +2348179030542, +2347040151491</h4>
+
+                    <div class="my-3">
+                        <h5>OR</h5>
+                    </div>
+
+                        <form action="#" method="post" id="contact_info">
                           <div class="row mb-4">
                             <div class="col-md-12">
                               <input type="text" id="input" name="name" class="form-control" placeholder="Full Name" autofocus required>
@@ -63,26 +73,26 @@
                           </div>
                           <div class="row mb-4">
                             <div class="col-md-12">
-                              <input type="text" id="input" name="Phone" type="tel" class="form-control" placeholder="Phone" required >
+                              <input type="text" id="input" name="phone" type="tel" class="form-control" placeholder="Phone" required >
                             </div>
                           </div>
                           <div class="row mb-4">
                             <div class="col-md-12">
-                              <textarea name="#" id="input" name="comment" type="text" class="form-control" placeholder="Write some words of encouragement" cols="30" rows="10"></textarea>
+                              <textarea  id="input" name="comment" type="text" class="form-control" placeholder="Write some words of encouragement" cols="30" rows="10"></textarea>
                             </div>
                           </div>
                           <div class="row">
                             <div class="col-md-12">
-                              <input type="submit" class="btn btn-primary btn-block" value="Get in touch">
+                                <button type="submit" id="submit_btn" class="btn center-block" class="btn btn-primary btn-block" >Get in touch</button>
                             </div>
                           </div>
-                          
-                        
                         </form>
-                        <br>
+                        <div class="feedbackmsg mt-3"></div>
+
+                    <br>
                         <div class="justify-content-between d-flex">
                           <div>
-                            <a href="resume.html" class="fa fa-arrow-circle-left mr-1" style="font-size: x-large;"></a>
+                            <a href="skill.html" class="fa fa-arrow-circle-left mr-1" style="font-size: x-large;"></a>
                           </div>
                           <div>
                             <!-- <a href="contact.html" class="fa fa-arrow-circle-right mr-1" style="font-size: x-large;"></a> -->

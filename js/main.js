@@ -212,6 +212,63 @@
 	};
 	contentWayPoint();
 
+    $(document).ready(function () {
+        $("#contact_info").submit(function (event) {
+            event.preventDefault();
+            $('#submit_btn').prop("disabled",true);
+            $('#submit_btn').text('Processing...');
+            console.log("details",this.comment.value,this.name.value,this.email.value,this.phone.value)
 
+            emailjs.sendForm('service_w10yj6y','template_ehnuo4n', '#contact_info')
+                .then(function() {
+                    $('.feedbackmsg').html('<div class="alert alert-success">Your message has been received!</div>');
+                    $('#submit_btn').text('Send Message');
+                    setTimeout(function(){
+                        $('.feedbackmsg').html('');
+                        $('#submit_btn').prop("disabled",false);
+
+                    }, 5000);
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    $('.feedbackmsg').html('<div class="alert alert-danger">Please try again or call me!</div>');
+                    $('#submit_btn').text('Send Message');
+                    setTimeout(function(){
+                        $('.feedbackmsg').html('');
+                        $('#submit_btn').prop("disabled",false);
+
+                    }, 5000);
+                });
+
+        });
+
+
+        $("#subscribe_info_form").submit(function (event) {
+            var formData = {
+                'email'	: $('input[name=emailad]').val(),
+                'subscribe'		: $('input[name=subscribe]').val(),
+            };
+            $('#mc-embedded-subscribe1').prop("disabled",true);
+            $('#mc-embedded-subscribe1').text('Processing');
+
+            $.ajax({
+                type: "POST",
+                url: "processors.php",
+                data: formData,
+                dataType: "json",
+                encode: true,
+            }).done(function (data) {
+                console.log("feedback",data.message)
+                $('#mce-response').html(data.message);
+                $('#mc-embedded-subscribe1').text('Subscribe');
+                setTimeout(function(){
+                    $('#mce-response').html('');
+                    $('#mc-embedded-subscribe1').prop("disabled",false);
+
+                }, 5000);
+            });
+
+            event.preventDefault();
+        });
+    });
 
 })(jQuery);

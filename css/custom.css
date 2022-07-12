@@ -180,10 +180,10 @@ aside  img{
 
 
 
-.portfolio-list li{
-    padding: 0;
-    border: 1px solid #000;
-}
+/*.portfolio-list li{*/
+/*    padding: 0;*/
+/*    border: 1px solid #000;*/
+/*}*/
 .portfolio-list li:hover {
     -webkit-box-shadow: 0 4px 10px 0 rgba(255, 255, 255, 0.699);
     box-shadow: 0 4px 10px 0 rgba(255, 255, 255, 0.699);
